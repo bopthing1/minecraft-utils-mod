@@ -1,6 +1,7 @@
 package net.bopthing1.utilmod;
 
 import com.mojang.logging.LogUtils;
+import net.bopthing1.utilmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +30,8 @@ public class UtilMod
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ModItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
