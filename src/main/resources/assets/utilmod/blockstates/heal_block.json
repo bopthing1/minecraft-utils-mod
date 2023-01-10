@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "utilmod:block/heal_block"
+    }
+  }
+}

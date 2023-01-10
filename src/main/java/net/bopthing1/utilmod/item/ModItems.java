@@ -17,5 +17,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> COIN = ITEMS.register("coin", () -> new CoinItem(
             new Item.Properties()
+                    
     ));
 }

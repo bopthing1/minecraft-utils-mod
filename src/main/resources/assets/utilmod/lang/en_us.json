@@ -1,3 +1,4 @@
 {
-  "item.utilmod.coin": "coin"
+  "item.utilmod.coin": "coin",
+  "block.utilmod.heal_block": "heal block"
 }
