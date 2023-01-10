@@ -1,6 +1,7 @@
 package net.bopthing1.utilmod.item;
 
 import net.bopthing1.utilmod.UtilMod;
+import net.bopthing1.utilmod.item.custom.CoinItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +15,7 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-//    public static final RegistryObject<Item> RANDOM_POWERS = ITEMS.register("random_powers", () -> new Item(
-//            new Item.Properties()
-//                    .stacksTo(64)
-//
-//    ));
+    public static final RegistryObject<Item> COIN = ITEMS.register("coin", () -> new CoinItem(
+            new Item.Properties()
+    ));
 }
