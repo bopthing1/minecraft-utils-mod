@@ -21,7 +21,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UtilMod.MOD_ID);
 
-    public static final RegistryObject<Block> HEAL_BLOCK = registerBlock("heal_block", () -> new HealBlock(
+    public static final RegistryObject<Block> HEAL_BLOCK = registerBlock("heal_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops()

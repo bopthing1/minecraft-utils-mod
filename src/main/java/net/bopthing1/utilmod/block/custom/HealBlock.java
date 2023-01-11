@@ -19,7 +19,9 @@ public class HealBlock extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+        System.out.println("UH HUH HEALBLOCK IKS TRHE BEST");
         if (entity instanceof LivingEntity livingEntity) {
+            System.out.println("touched healblock: " + entity.getName());
             livingEntity.addEffect(new MobEffectInstance(MobEffects.HEAL, 200));
         }
 
